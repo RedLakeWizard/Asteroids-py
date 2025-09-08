@@ -49,8 +49,6 @@ class Player(CircleShape):
             if self.player_cooldown == 0:
                 self.player_cooldown = 0.3
                 self.shoot()
-
-            print(self.player_cooldown)
         
     def shoot(self):
         shot = Shot(self.position.x, self.position.y, SHOT_RADIUS)
